@@ -19,6 +19,7 @@ public enum Mesa {
 
     Mesa(String numeroMesa){
         this.numeroMesa = numeroMesa;
+        this.isOcupado=false;
     }
 
     public String getNumeroMesa(){
