@@ -15,6 +15,6 @@ public class Pedido {
     private Integer id;
     private Mesa mesa;
     private List<Prato> listaPratos;
-    Double valorTotal;
+    private Double valorTotal;
 
 }
