@@ -31,4 +31,8 @@ public class PratoRepository {
     public Prato buscarPorId(Integer id) {
         return pratoMap.get(id);
     }
+
+    public void deletarPorId(Integer id){
+        pratoMap.remove(id);
+    }
 }

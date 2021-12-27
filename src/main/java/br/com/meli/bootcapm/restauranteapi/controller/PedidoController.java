@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/")
-public class Controller {
+@RequestMapping("/pedido")
+public class PedidoController {
 
     @Autowired
     private PedidoRepository pedidoRepository;
@@ -26,8 +26,14 @@ public class Controller {
         return ResponseEntity.ok(pedidoRepository.salvar(pedido));
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/buscarPorId/{id}")
     public ResponseEntity<Pedido> buscarPorId(@PathVariable Integer id){
         return ResponseEntity.ok(pedidoRepository.buscarPorId(id));
     }
+
+    @DeleteMapping("/deletarPorId/{id}")
+    public ResponseEntity<?> deletarPorId(@PathVariable Integer id){
+        return ResponseEntity.ok("Pedido de id " + id + " excluído com sucesso.");
+    }
+
 }

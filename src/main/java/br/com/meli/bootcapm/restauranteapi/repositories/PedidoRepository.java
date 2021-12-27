@@ -38,4 +38,8 @@ public class PedidoRepository {
     public Pedido buscarPorId(Integer id) {
         return pedidoMap.get(id);
     }
+
+    public void deletarPorId(Integer id){
+        pedidoMap.remove(id);
+    }
 }
