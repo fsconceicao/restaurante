@@ -33,4 +33,5 @@ public enum Mesa {
     public void setOcupado(boolean ocupado) {
         isOcupado = ocupado;
     }
+
 }

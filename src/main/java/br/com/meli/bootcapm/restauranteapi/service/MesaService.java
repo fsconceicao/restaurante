@@ -28,4 +28,8 @@ public class MesaService {
         mesa.setOcupado(!mesa.isOcupado());
     }
 
+    public List<Mesa> listar(){
+        return null;
+    }
+
 }
