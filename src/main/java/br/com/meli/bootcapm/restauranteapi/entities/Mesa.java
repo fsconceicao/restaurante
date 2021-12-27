@@ -1,5 +1,6 @@
 package br.com.meli.bootcapm.restauranteapi.entities;
 
+
 public enum Mesa {
 
     UM("1"),
