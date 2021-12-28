@@ -16,5 +16,4 @@ public class Pedido {
     private Mesa mesa;
     private List<Prato> listaPratos;
     private Double valorTotal;
-
 }
